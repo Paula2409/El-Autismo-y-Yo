@@ -1,0 +1,375 @@
+/* Barra redes sociales y busqueda */
+.social_search{
+    padding: 5px 10px;
+    background-color:rgb(233, 231, 231);
+    text-align: right;
+    
+}
+
+.social a:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Titulo principal */
+.header_title{
+    display:grid;
+    grid-template-columns: 7% auto;
+    grid-template-rows: auto;
+    grid-template-areas: "img title";
+    place-items: center;
+    background-color:rgba(24, 57, 247, 0.86);
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,12,99,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.title{
+    display: grid;
+    grid-area: title;
+    font-size: 70px;
+    color:rgb(233, 231, 231);
+    text-decoration: none;
+}
+
+.img_title{
+    display: grid;
+    align-content: center;
+    grid-area: img;
+}
+
+
+/* Bloque de menu de navegacion */
+.nav_menu{
+    display: flex;
+    background-color:white;
+    height: 30px;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    padding: 10px;
+    border: 0.1px solid;
+    place-content: center;
+    
+}
+
+/* Listas del menu */
+.nav_menu ul{
+    list-style:none;
+    margin:0;
+    padding: 0 50px;
+}
+
+/* Secciones del menu */
+.nav_menu ul li{
+    position:relative;
+    top: 0;
+    bottom: 5px;
+    left: 5px;
+    padding: 0 45px;
+    float: left;
+
+
+}
+
+/* Menu de los accesos para navegar */
+.nav_menu ul li ul{
+    text-decoration: none;
+    position: absolute;/* Cuando paso el cursor permanece fijo con el texto abajo */
+    display: none;
+    font-size:16px;
+    padding: 5px 2px 0px 0px;
+    line-height:250%;
+    font-family: fangsong, Baskerville;
+    white-space: nowrap;
+
+
+}
+
+.nav_menu li a{
+    text-decoration: none;
+    color:rgb(26, 88, 204);
+}
+
+
+/* Muestro solo las listas dentro de los items de listas anteriores */
+.nav_menu ul li:hover>ul{
+    display: block;
+    background-color:white;
+    border-radius: 10px;
+    border: 0.5px solid grey;
+
+}
+
+.nav_menu a:hover{
+    color: black !important;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav_menu a:visited{ 
+    color: purple;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+
+/* Articulo pagina principal */
+.article_aside{
+    display: grid;
+    color: black;
+    height: 1300px;
+    grid-template: 70% 30% / 40% 40% 20%;
+    grid-template-areas: "article article aside"
+                         "animation animation animation";
+}
+
+#article_index{
+    display: grid;
+    grid-area: article;
+    color: black;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 22px;
+    word-spacing: 10px;
+    padding: 0 20px;
+    line-height: 220%; 
+    place-content: center;
+}
+
+
+/* Aside */
+aside{
+    display: grid;
+    grid-area: aside;
+    align-content: space-evenly;
+    justify-items: center;
+
+}
+
+aside p{
+    width: 250px;
+}
+
+/* Animacion pagina principal */
+.animation{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-area: animation;
+    justify-content: space-evenly;
+    align-content: center;
+    animation-duration: 20s;
+}
+
+.animation_1{
+    grid-template-columns: 1/2;
+}
+
+.animation_2{
+    grid-template-columns: 2/3;
+}
+
+.animation_3{
+    grid-template-columns: 3/4;
+}
+
+.animation_1:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.animation_2:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.animation_3:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+/* Contenedor Marea Azul caja principal */
+.heading_sea h2{
+    color:black;
+    font-size: 24px;
+}
+
+.heading_sea{
+    text-align:left;
+    background-color:rgba(47, 210, 255, 0.414);
+    color:rgb(31, 21, 21);
+    line-height: 220%;
+    height: 630px;
+    padding: 2px 15px;
+    border-radius: 20px;
+}
+
+.sea{
+    height: 500px;
+    font-size: 18px;
+}
+
+.sea img{
+    float: right;
+    padding: 10px;
+}
+
+
+/* Estilos para footer */
+footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 85% 15%;
+    height: 180px;
+    background-color:black;
+    border-radius: 20px;
+}
+
+.access{
+    grid-column: 1/2;
+    line-height: 170%;
+    padding: 10px;
+}
+
+.access a,.access_1 a{
+    color: white;
+}
+
+.access a:hover,.access_1 a:hover{
+    color:rgb(242, 37, 37);
+}
+
+.access_1{
+    grid-column: 2/3;
+    line-height: 150%;
+    justify-content: start;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.email{
+    display: grid;
+    grid-column: 3/4;
+    place-content: center;
+    
+}
+
+.map{
+    display: grid;
+    grid-column: 4/5;
+    justify-items: end;
+    align-content: center;
+    margin: 10px;
+}
+
+.foot{
+    display: grid;
+    grid-column: 1/5;
+    border-top: 1px solid;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(1, 22, 22);
+    color:aliceblue;
+    
+}
+
+/* lista de inicio de la pagina de dias conmemorativos */
+#list_days p, #list_therapies,#article_art{
+    padding-left: 10px;
+
+}
+
+
+/* Contenedores principales de dias, articulos y tratamientos */
+.article_days,.article_articles,.article_therapies{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    word-spacing: 5px;
+    line-height: 220%;
+    font-size: 18px;
+    padding: 0px 140px;
+}
+
+/* Imagenes y enlaces de dias, articulos y tratamientos */
+#asperger_days img, #logo_therapies img,.des_img2 img, .des_img1 img, #psico_therapies img,.mark{
+    float: right;
+}
+
+
+
+/* Pagina de Articulos de Informacion */
+.video_detect{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+
+.animation_articles{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    align-content: center;
+    animation-name: anim;
+    animation-duration: 20s;
+}
+
+@keyframes anim{
+    from{
+        margin-left: 100%;
+    }
+    to{ 
+        margin-left: 0%;
+    }
+}
+
+
+.des_img2 p{
+    float:left;
+}
+
+
+/* Pagina de Tratamientos */
+.note{
+    text-align: center;
+    text-decoration: bolder;
+    font-size: 30px;
+}
+
+.img_to_therapies{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+/* Pagina de Nosotros */
+.main_us{
+    padding: 10px 140px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    line-height: 200%;
+    background-color: rgb(248, 241, 241);
+}
+
+
+/* Pagina de formulario de contacto */
+
+.form{
+	margin: 0px 100px;
+    font-size: 20px;
+}
+
+
+/*Pagina Involucrarse*/
+.list_inv li{
+    font-weight: bold;
+    color:rgba(24, 57, 247, 0.86);
+}
+
+.involved{
+    padding: 5px 70px;
+    line-height:200%;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+}

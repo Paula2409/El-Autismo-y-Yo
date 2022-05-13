@@ -373,3 +373,24 @@ footer{
     font-family: 'Cormorant Garamond', serif;
     font-size: 18px;
 }
+
+
+/* Pagina de Material de Ayuda */
+.main_help{
+    font-size: 18px;
+}
+
+
+.main_help h1{
+    text-align: center;
+    text-decoration: bolder;
+    font-style: italic;
+}
+
+.main_help h4{
+    padding: 200px;
+}
+
+.main_help ul{
+    padding: 250px;
+}

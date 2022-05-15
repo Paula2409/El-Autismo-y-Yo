@@ -14,7 +14,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/b11e72e5db.js" crossorigin="anonymous"></script>
-    
+        <script src="main.js" ></script>
     </head>
 <body>
     
@@ -73,7 +73,7 @@
     <div class="contact">
     <div class="form">
         <h1><em>Formulario de contacto</em></h1>
-        <form name="formulario" action="mailto:padgiromano@gmail.com" method="post">
+        <form name="formulario" method="get">
             <table>
                 <tr>
                     <td><label for="nombre">Nombre: </label><input type="text" name="nombre" size="40" maxlenght="10" placeholder="Ingrese su nombre" style="font-size: 20px"></td>
@@ -85,16 +85,16 @@
                     <td><label for="email">Email: </label><input type="mail" name="mail" size="40" maxlenght="10" placeholder="Ingrese su correo electronico" style="font-size: 20px"></td>
                 </tr>    
                 <tr>        
-                    <td><p><strong>Como nos encontro: </strong>
+                    <td><strong>Como nos encontro: </strong>
                         <label for="radio"></label><input type="radio" name="radio" checked style="font-size: 20px">Buscador online
                         <label for="radio"></label><input type="radio" name="radio" style="font-size: 20px">Amigos
-                        <label for="radio"></label><input type="radio" name="radio" style="font-size: 20px">Redes Sociales<br><br></p></td>
+                        <label for="radio"></label><input type="radio" name="radio" style="font-size: 20px">Redes Sociales<br><br></td>
                 </tr>
                 <tr>        
-                    <td>Mensaje: <br></label><textarea name="textarea" rows="10" cols="50" placeholder="Escriba aqui su mensaje" style="font-size: 20px"></textarea></td>
+                    <td>Mensaje: <br></label><textarea name="mensaje" rows="10" cols="50" placeholder="Escriba aqui su mensaje" style="font-size: 20px"></textarea></td>
                 </tr>
                 <tr> 
-                    <td><input type="submit" value="Enviar" size="30" style="font-size: 20px"> <input type="reset" value="Reset" size="30" style="font-size: 20px"></li><br></td>
+                    <td><input type="submit" value="Enviar" size="30" style="font-size: 20px" name="submit" onclick="validar_form()"> <input type="reset" value="Reset" size="30" style="font-size: 20px"><br></td>
                 </tr>
             </table>
         </form>
@@ -135,6 +135,44 @@
     </div>
 
 </footer>
+
+<script>
+// Validacion formulario
+
+function validar_form() {
+
+    if (document.formulario.nombre.value.length == 0) {
+        alert("Por favor, escriba su nombre")
+        document.formulario.nombre.focus()
+        return 0;
+    }
+
+    if (document.formulario.apellido.value.length == 0) {
+        alert("Por favor, escriba su apellido")
+        document.formulario.apellido.focus()
+        return 0;
+    }
+
+
+    if (document.formulario.mail.value.length == 0) {
+        alert("Por favor, escriba su correo electronico")
+        document.formulario.email.focus()
+        return 0;
+    }
+    
+
+    if (document.formulario.mensaje.value.length == 0) {
+        alert("Escriba un mensaje")
+        document.formulario.mensaje.focus()
+        return 0;
+    }
+
+
+    alert("Gracias por escribirnos!!")
+    document.formulario.submit();
+}
+
+</script>
 
 </body>
 

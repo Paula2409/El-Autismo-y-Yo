@@ -422,10 +422,12 @@ footer{
 @media only screen and (max-width: 768px){
 	body {width: 768px;}
 	.heading_sea {display: grid; grid-area: sea;}
-    	.main_index {display: grid; grid-template: 30% 20% 20% 30% / auto; grid-template-areas: "article"
-												"aside"
-												"animation"
-												"sea"}
+    	.main_index {display: grid; grid-template: auto auto auto auto / auto; grid-template-areas: 	"article"
+													"aside"
+													"animation"
+													"sea";}
+	.article_aside {display: block;}
+	aside {grid-auto-flow: column;}
 	footer: {font-size: 14px; height: 158px;}
 	.nav_menu ul li {padding: 6px; font-size: 15px;}
     	.nav_menu ul {padding: 0px 14px}

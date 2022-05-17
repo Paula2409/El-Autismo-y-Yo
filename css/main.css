@@ -426,5 +426,7 @@ footer{
 												"aside"
 												"animation"
 												"sea"}
-    
+	footer: {font-size: 14px; height: 158px;}
+	.nav_menu ul li {padding: 6px; font-size: 15px;}
+    	.nav_menu ul {padding: 0px 14px}
 }

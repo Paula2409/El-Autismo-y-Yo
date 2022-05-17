@@ -431,4 +431,6 @@ footer{
 	footer: {font-size: 14px; height: 158px;}
 	.nav_menu ul li {padding: 6px; font-size: 15px;}
     	.nav_menu ul {padding: 0px 14px}
+	.heading_sea {height: auto;}
+	.sea {height: auto;}
 }

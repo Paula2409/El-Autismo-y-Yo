@@ -121,7 +121,7 @@ body{
 .article_aside{
     display: grid;
     color: black;
-    heigth: 1300px;
+    height: 1300px;
     grid-template: 70% 30% / 40% 40% 20%;
     grid-template-areas: "article article aside"
                          "animation animation animation";
@@ -193,7 +193,7 @@ aside p{
 /* Contenedor Marea Azul caja principal */
 .heading_sea h2{
     color:black;
-    font-size: 24px;
+
 }
 
 .heading_sea{
@@ -419,21 +419,21 @@ footer{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@media only screen and (max-width: 768px){
-	body {width: 768px;}
-	.heading_sea {display: grid; grid-area: sea;}
-    .main_index {display: grid; grid-template: auto auto auto auto / auto; gap: 20px;
-        grid-template-areas: "article"
-	        				"aside"
-			   				"animation"
-			    			"sea";}
-	.article_aside {display: block;}
-	aside {grid-auto-flow: column;}
-	footer {font-size: 14px; height: 158px;}
+@media screen and (max-width: 1024px){
+    .main_index {display: grid; height: auto; grid-template: auto auto auto auto / auto; gap: 20px;
+        grid-template-areas: "article_1"
+	        				"aside_1"
+			   				"animation_1"
+			    			"sea_1";}
+    .article_aside{display:block; height: auto;}
+	#article_index {display: grid; grid-area: article_1; grid-row: 1/2; grid-column: 1/2;}
+	aside {display: grid; grid-area: aside_1; grid-auto-flow: column; grid-row: 2/3}
+    .animation{display: grid; grid-area: animation_1; grid-row: 3/4;}
+	.heading_sea {display: grid; grid-area: sea_1; grid-row: 4/5; height: auto;}
+	.sea {height: auto;}
+    footer {font-size: 14px; height: 158px;}
 	.nav_menu ul li {padding: 6px; font-size: 15px;}
     .nav_menu ul {padding: 0px 14px;}
-	.heading_sea {height: auto;}
-	.sea {height: auto;}
     .article_articles,.article_days,.article_therapies,.main_us,.main_help h1,.main_help h4,.main_help ul{padding: 0px 80px;}
     .contact{display:block;}
     .involved{font-size: 18px;}

@@ -379,7 +379,7 @@ footer{
 .form_img{
     display: grid;
     grid-area: form_img;
-    place-items: center;
+   place-items: center;
 }
 
 /*Pagina Involucrarse*/
@@ -435,7 +435,37 @@ footer{
 	.nav_menu ul li {padding: 6px; font-size: 15px;}
     .nav_menu ul {padding: 0px 14px;}
     .article_articles,.article_days,.article_therapies,.main_us,.main_help h1,.main_help h4,.main_help ul{padding: 0px 80px;}
-    .contact{display:block;}
+    .contact{display:block; margin-bottom: 10px;}
     .involved{font-size: 18px;}
+    .main_us h1{margin:0;}
+    .main_us p{margin-bottom:0;}
+}
 
+@media screen and (max-width: 425px){
+    body,.main_index,aside,.animation{width:425px;}
+    .main_index {display: grid; height: auto; grid-template: auto auto auto auto / auto; gap: 20px;
+        grid-template-areas: "article_1"
+	        				"aside_1"
+			   				"animation_1"
+			    			"sea_1";}
+    .title{font-size: 43px;}
+    .article_aside{display:block; height: auto;}
+	#article_index {display: grid; grid-area: article_1; grid-row: 1/2; grid-column: 1/2;}
+	aside {display: grid; grid-area: aside_1; grid-auto-flow: column; grid-row: 2/3; padding: 2px;}
+    aside p{font-size: 15px; width: 180px}
+    aside iframe{width:50%; height: 50%; padding-left: 10px; padding-left: 30px;}
+    .animation{display: grid; grid-area: animation_1; grid-row: 3/4;}
+    .animation img{width: 100px;height:120px;}
+	.heading_sea {display: grid; grid-area: sea_1; grid-row: 4/5; height: 1200px;}
+	.sea {height: auto;}
+    .sea img{width: 20%; height: 10%;}
+    footer {font-size: 10px; height: 158px;}
+    .nav_menu{font-size:10px; padding:0;}
+	.nav_menu ul li {font-size: 8px;}
+    .nav_menu ul {padding: 0px}
+    .article_articles,.article_days,.article_therapies,.main_us,.main_help h1,.main_help h4,.main_help ul{padding: 0px 80px;}
+    .contact{display:block; margin-bottom: 10px;}
+    .involved{font-size: 12px;}
+    .main_us h1{margin:0;}
+    .main_us p{margin-bottom:0;}
 }

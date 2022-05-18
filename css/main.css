@@ -442,7 +442,6 @@ footer{
 }
 
 @media screen and (max-width: 425px){
-    body,.main_index,aside,.animation{width:425px;}
     .main_index {display: grid; height: auto; grid-template: auto auto auto auto / auto; gap: 20px;
         grid-template-areas: "article_1"
 	        				"aside_1"

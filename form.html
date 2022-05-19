@@ -74,29 +74,15 @@
     <div class="form">
         <h1><em>Formulario de contacto</em></h1>
         <form name="formulario" method="get">
-            <table>
-                <tr>
-                    <td><label for="nombre">Nombre: </label><input type="text" name="nombre" size="30" maxlenght="10" placeholder="Ingrese su nombre" style="font-size: 20px"></td>
-                </tr>
-                <tr>
-                    <td><label for="apellido">Apellido: </label><input type="text" name="apellido" size="30" maxlenght="10" placeholder="Ingrese su apellido" style="font-size: 20px"></td>
-                </tr> 
-                <tr>
-                    <td><label for="email">Email: </label><input type="mail" name="mail" size="30" maxlenght="10" placeholder="Ingrese su correo electronico" style="font-size: 20px"></td>
-                </tr>    
-                <tr>        
-                    <td><strong>Como nos encontro: </strong>
+            <label for="nombre">Nombre: </label><input type="text" name="nombre" size="30" maxlenght="10" placeholder="Ingrese su nombre" style="font-size: 20px"><br>
+            <label for="apellido">Apellido: </label><input type="text" name="apellido" size="30" maxlenght="10" placeholder="Ingrese su apellido" style="font-size: 20px"><br>
+            <label for="email">Email: </label><input type="mail" name="mail" size="30" maxlenght="10" placeholder="Ingrese su correo electronico" style="font-size: 20px"><br>
+            <strong>Como nos encontro: </strong>
                         <label for="radio"></label><input type="radio" name="radio" checked style="font-size: 20px">Buscador online
                         <label for="radio"></label><input type="radio" name="radio" style="font-size: 20px">Amigos
-                        <label for="radio"></label><input type="radio" name="radio" style="font-size: 20px">Redes Sociales<br><br></td>
-                </tr>
-                <tr>        
-                    <td>Mensaje: <br></label><textarea name="mensaje" rows="10" cols="50" placeholder="Escriba aqui su mensaje" style="font-size: 20px"></textarea></td>
-                </tr>
-                <tr> 
-                    <td><input type="submit" value="Enviar" size="30" style="font-size: 20px" name="submit" onclick="validar_form()"> <input type="reset" value="Reset" size="30" style="font-size: 20px"><br></td>
-                </tr>
-            </table>
+                        <label for="radio"></label><input type="radio" name="radio" style="font-size: 20px">Redes Sociales<br><br>
+                Mensaje: <br></label><textarea name="mensaje" rows="10" cols="25" placeholder="Escriba aqui su mensaje" style="font-size: 20px"></textarea>
+                <input type="submit" value="Enviar" size="30" style="font-size: 20px" name="submit" onclick="validar_form()"> <input type="reset" value="Reset" size="30" style="font-size: 20px"><br>
         </form>
     </div>
     <div class="form_img">

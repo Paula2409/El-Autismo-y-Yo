@@ -14,7 +14,7 @@
 /* Titulo principal */
 .header_title{
     display:grid;
-    grid-template-columns: 10% auto;
+    grid-template-columns: 15% auto;
     grid-template-rows: auto;
     grid-template-areas: "img title";
     place-items: center;
@@ -28,7 +28,7 @@
 .title{
     display: grid;
     grid-area: title;
-    font-size: 90px;
+    font-size: 10em;
     color:rgb(233, 231, 231);
     text-decoration: none;
 }
@@ -208,7 +208,7 @@ aside p{
 
 .sea{
     height: 500px;
-    font-size: 18px;
+    font-size: 1em;
 }
 
 .sea img{
@@ -425,6 +425,7 @@ footer{
 	        				"aside_1"
 			   				"animation_1"
 			    			"sea_1";}
+    .title{font-size: 70px;}
     .article_aside{display:block; height: auto;}
 	#article_index {display: grid; grid-area: article_1; grid-row: 1/2; grid-column: 1/2;}
 	aside {display: grid; grid-area: aside_1; grid-auto-flow: column; grid-row: 2/3}
@@ -432,8 +433,10 @@ footer{
 	.heading_sea {display: grid; grid-area: sea_1; grid-row: 4/5; height: auto;}
 	.sea {height: auto;}
     footer {font-size: 14px; height: 158px;}
-	.nav_menu ul li {padding: 6px; font-size: 15px;}
-    .nav_menu ul {padding: 0px 14px;}
+    .nav_menu{display: flex; font-size:15px; padding:0; height: 110px;}
+    .nav_menu ul li {font-size: 15px;}
+    .nav_menu ul {padding: 0px; display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center;}
+    .nav_menu ul li ul li{line-height: normal; background: white; opacity:1.0;}
     .article_articles,.article_days,.article_therapies,.main_us,.main_help h1,.main_help h4,.main_help ul{padding: 0px 80px;}
     .contact{display:block; margin-bottom: 10px;}
     .involved{font-size: 18px;}
@@ -455,18 +458,18 @@ footer{
     aside iframe{width:50%; height: 50%; padding-left: 10px; padding-left: 30px;}
     .animation{display: grid; grid-area: animation_1; grid-row: 3/4;}
     .animation img{width: 100px;height:120px;}
-	.heading_sea {display: grid; grid-area: sea_1; grid-row: 4/5; height: 1200px;}
+	.heading_sea {display: grid; grid-area: sea_1; grid-row: 4/5; height: auto;}
 	.sea {height: auto;}
     .sea img{width: 20%; height: 10%;}
     footer {font-size: 10px; height: 158px;}
     .nav_menu{display: flex; font-size:15px; padding:0; height: 110px;}
     .nav_menu ul li {font-size: 15px;}
     .nav_menu ul {padding: 0px; display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center;}
-    .nav_menu ul li ul{line-height: normal; background: white; opacity:1.0;}
+    .nav_menu ul li ul li{line-height: normal; background: white; opacity:1.0;}
     .article_articles,.article_days,.article_therapies,.main_us,.main_help h1,.main_help h4,.main_help ul, main{padding: 0px 10px; font-size: 15px;}
     .animation_articles img{width: 50px; height: 50px;}
-    .contact{display:block; margin-bottom: 10px; font-size: 10px;}
-    tr,input,.form{font-size: 14px; margin:0; white-space: break-spaces;}
+    .contact{display:block; margin-bottom: 5px; font-size: 10px;}
+    .form{font-size: 14px; margin-left:1px; white-space: break-spaces;}
     .involved{font-size: 12px;}
     .main_us h1{margin:0;}
     .main_us p{margin-bottom:0;}

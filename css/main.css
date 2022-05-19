@@ -459,9 +459,10 @@ footer{
 	.sea {height: auto;}
     .sea img{width: 20%; height: 10%;}
     footer {font-size: 10px; height: 158px;}
-    .nav_menu{display: block; font-size:10px; padding:0; height: 25px;}
-	.nav_menu ul li {font-size: 8px; }
-    .nav_menu ul {padding: 0px;}
+    .nav_menu{display: flex; font-size:1em; padding:0; height: 100px;}
+    .nav_menu ul li {font-size: 8px; }
+    .nav_menu ul {padding: 0px; display: flex; flex-wrap: wrap; justify-content: space-evenly;}
+    .nav_menu ul li ul{line-height: normal;}
     .article_articles,.article_days,.article_therapies,.main_us,.main_help h1,.main_help h4,.main_help ul, main{padding: 0px 10px; font-size: 15px;}
     .animation_articles img{width: 50px; height: 50px;}
     .contact{display:block; margin-bottom: 10px; font-size: 10px;}
@@ -469,8 +470,4 @@ footer{
     .involved{font-size: 12px;}
     .main_us h1{margin:0;}
     .main_us p{margin-bottom:0;}
-}
-@media screen and (max-width: 414px){
-	.nav_menu ul li {font-size: 7px; }
-
 }

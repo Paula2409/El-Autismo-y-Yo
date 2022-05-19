@@ -28,7 +28,7 @@
 .title{
     display: grid;
     grid-area: title;
-    font-size: 10em;
+    font-size: 7em;
     color:rgb(233, 231, 231);
     text-decoration: none;
 }

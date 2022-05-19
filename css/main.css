@@ -44,7 +44,6 @@
 /* Bloque de menu de navegacion */
 .nav_menu{
     display: flex;
-    background-color:white;
     height: 30px;
     font-size: 20px;
     font-weight: bolder;
@@ -60,6 +59,7 @@
     list-style:none;
     margin:0;
     padding: 0 50px;
+
 }
 
 /* Secciones del menu */
@@ -70,6 +70,7 @@
     left: 5px;
     padding: 0 45px;
     float: left;
+
     
 }
 
@@ -84,20 +85,23 @@
     font-family: fangsong, Baskerville;
     white-space: nowrap;
 
+
 }
 
 .nav_menu li a{
     text-decoration: none;
     color:rgb(26, 88, 204);
+
 }
 
 
 /* Muestro solo las listas dentro de los items de listas anteriores */
 .nav_menu ul li:hover>ul{
     display: block;
-    background-color:white;
     border-radius: 10px;
     border: 0.5px solid grey;
+    background-color:rgb(247, 241, 241);
+    opacity: 1.0;
 
 }
 
@@ -208,7 +212,7 @@ aside p{
 
 .sea{
     height: 500px;
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
 .sea img{
@@ -436,7 +440,7 @@ footer{
     .nav_menu{display: flex; font-size:15px; padding:0; height: 110px;}
     .nav_menu ul li {font-size: 15px;}
     .nav_menu ul {padding: 0px; display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center;}
-    .nav_menu ul li ul li{line-height: normal; background: white; opacity:1.0;}
+    .nav_menu ul li ul li{line-height: normal; opacity:1.0;}
     .article_articles,.article_days,.article_therapies,.main_us,.main_help h1,.main_help h4,.main_help ul{padding: 0px 80px;}
     .contact{display:block; margin-bottom: 10px;}
     .involved{font-size: 18px;}
@@ -465,7 +469,7 @@ footer{
     .nav_menu{display: flex; font-size:15px; padding:0; height: 110px;}
     .nav_menu ul li {font-size: 15px;}
     .nav_menu ul {padding: 0px; display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center;}
-    .nav_menu ul li ul li{line-height: normal; background: white; opacity:1.0;}
+    .nav_menu ul li ul li{line-height: normal; opacity:1.0;}
     .article_articles,.article_days,.article_therapies,.main_us,.main_help h1,.main_help h4,.main_help ul, main{padding: 0px 10px; font-size: 15px;}
     .animation_articles img{width: 50px; height: 50px;}
     .contact{display:block; margin-bottom: 5px; font-size: 10px;}
